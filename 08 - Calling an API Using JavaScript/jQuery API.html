@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Module 8 - Choose To Code</title>
+<style>
+body{font-family:helvetica, arial, freesans, clean, sans-serif;color:#333;line-height:1.6;font-size:14px}.markdown-body{line-height:1.6;font-size:14px}.markdown-body > *:first-child{margin-top:0 !important}.markdown-body > *:last-child{margin-bottom:0 !important}.markdown-body a.absent{color:#c00}.markdown-body h1{font-weight:700;-webkit-font-smoothing:antialiased;color:#000;font-size:28px;margin:20px 0 10px;padding:0}.markdown-body h2{font-weight:700;-webkit-font-smoothing:antialiased;color:#000;font-size:24px;border-bottom-color:#ccc;border-bottom-width:1px;border-bottom-style:solid;margin:20px 0 10px;padding:0}.markdown-body h3{font-weight:700;-webkit-font-smoothing:antialiased;font-size:18px;margin:20px 0 10px;padding:0}.markdown-body h4{font-weight:700;-webkit-font-smoothing:antialiased;font-size:16px;margin:20px 0 10px;padding:0}.markdown-body h5{font-weight:700;-webkit-font-smoothing:antialiased;font-size:14px;margin:20px 0 10px;padding:0}.markdown-body h6{font-weight:700;-webkit-font-smoothing:antialiased;color:#777;font-size:14px;margin:20px 0 10px;padding:0}.markdown-body blockquote{color:#777;border-left-color:#ddd;border-left-width:4px;border-left-style:solid;margin:15px 0;padding:0 15px}.markdown-body dl{margin:15px 0;padding:0}.markdown-body table{border-collapse:collapse;margin:15px 0;padding:0}.markdown-body pre{border-radius:3px;border:1px solid #ccc;line-height:19px;overflow:auto;font-size:13px;background-color:#f8f8f8;margin:15px 0;padding:6px 10px}.markdown-body li p.first{display:inline-block}.markdown-body dl dt{font-size:14px;font-style:italic;font-weight:700;margin:15px 0 5px;padding:0}.markdown-body dl dt:first-child{padding:0}.markdown-body dl dd{margin:0 0 15px;padding:0 15px}.markdown-body table tr{border-top-color:#ccc;border-top-width:1px;border-top-style:solid;background-color:#fff;margin:0;padding:0}.markdown-body table tr:nth-child(2n){background-color:#f8f8f8}.markdown-body img{max-width:100%}.markdown-body span.frame{overflow:hidden;display:block}.markdown-body span.frame > span{border:1px solid #ddd;width:auto;overflow:hidden;float:left;display:block;margin:13px 0 0;padding:7px}.markdown-body span.frame span img{float:left;display:block}.markdown-body span.frame span span{color:#333;clear:both;display:block;padding:5px 0 0}.markdown-body span.align-center > span{text-align:center;overflow:hidden;display:block;margin:13px auto 0}.markdown-body span.align-center span img{text-align:center;margin:0 auto}.markdown-body span.align-right > span{text-align:right;overflow:hidden;display:block;margin:13px 0 0}.markdown-body span.align-right span img{text-align:right;margin:0}.markdown-body span.float-left{overflow:hidden;margin-right:13px;float:left;display:block}.markdown-body span.float-left span{margin:13px 0 0}.markdown-body span.float-right{overflow:hidden;margin-left:13px;float:right;display:block}.markdown-body span.float-right > span{text-align:right;overflow:hidden;display:block;margin:13px auto 0}.markdown-body pre > code{border:currentColor;white-space:pre;margin:0;padding:0}.markdown-body .highlight pre{border-radius:3px;border:1px solid #ccc;line-height:19px;overflow:auto;font-size:13px;background-color:#f8f8f8;padding:6px 10px}.markdown-body p,.markdown-body li{margin:15px 0}.markdown-body ul,.markdown-body ol{padding-left:30px;margin:15px 0}.markdown-body > h2:first-child,.markdown-body > h1:first-child,.markdown-body > h1:first-child + h2{border:0 currentColor;padding-top:0;margin-top:0}.markdown-body > h3:first-child,.markdown-body > h4:first-child,.markdown-body > h5:first-child,.markdown-body > h6:first-child{padding-top:0;margin-top:0}.markdown-body h1 + p,.markdown-body h2 + p,.markdown-body h3 + p,.markdown-body h4 + p,.markdown-body h5 + p,.markdown-body h6 + p,.markdown-body ul li > :first-child,.markdown-body ol li > :first-child,.markdown-body dl dt > :first-child,.markdown-body dl dd > :first-child,.markdown-body blockquote > :first-child,.markdown-body table tr th > :first-child,.markdown-body table tr td > :first-child{margin-top:0}.markdown-body ul li > :last-child,.markdown-body ol li > :last-child,.markdown-body dl dt > :last-child,.markdown-body dl dd > :last-child,.markdown-body blockquote > :last-child,.markdown-body table tr th > :last-child,.markdown-body table tr td > :last-child{margin-bottom:0}.markdown-body table tr th,.markdown-body table tr td{border:1px solid #ccc;text-align:left;margin:0;padding:6px 13px}.markdown-body span.align-center,.markdown-body span.align-right{overflow:hidden;clear:both;display:block}.markdown-body code,.markdown-body tt{border-radius:3px;border:1px solid #eaeaea;white-space:nowrap;background-color:#f8f8f8;margin:0 2px;padding:0 5px}.markdown-body pre code,.markdown-body pre tt{border:currentColor;background-color:transparent}span.codelanguage{display:none}
+</style>
+</head>
+<body>
+<div class="markdown-body">
+<h2 id="Using_jQuery_to_retrieve_information_from_other_websites">Using jQuery to retrieve information from other websites</h2>
+
+<h3 id="Objectives">Objectives</h3>
+
+<ul>
+<li>JQuery to simplify interactions</li>
+<li>Add interactivity</li>
+<li>Add content from another website</li>
+</ul>
+
+<h3 id="Introduction_to_JQuery">Introduction to JQuery</h3>
+
+<p>In the last module we spent time going over JavaScript to add interactivity to your web page. We looked at validating input from a user as well as adding HTML content using code.</p>
+
+<p>In this module we want to introduce a library for JavaScript called JQuery. JQuery is a set of JavaScript functions code that allow you to interact with your content in a very simple way. First let's add JQuery to our web page, and then we will look at what it can do.</p>
+
+<p>Open up your <strong>index.html</strong> file and add the &quot;jquery-1.10.2.js&quot; line to the &lt;head&gt; portion of your web page.</p>
+
+<!-- mark: 7 -->
+
+<span class="codelanguage">html</span><pre><code class="html"><span style="color:#0000FF">&lt;</span><span style="color:#800000">html</span><span style="color:#0000FF">&gt;</span>
+
+<span style="color:#0000FF">&lt;</span><span style="color:#800000">head</span><span style="color:#0000FF">&gt;</span>
+    <span style="color:#0000FF">&lt;</span><span style="color:#800000">title</span><span style="color:#0000FF">&gt;</span>My First Web Page<span style="color:#0000FF">&lt;/</span><span style="color:#800000">title</span><span style="color:#0000FF">&gt;</span>
+    <span style="color:#0000FF">&lt;</span><span style="color:#800000">link</span> <span style="color:#FF0000">href</span>=<span style="color:#0000FF">&quot;app.css&quot;</span> <span style="color:#FF0000">rel</span>=<span style="color:#0000FF">&quot;stylesheet&quot;</span> <span style="color:#0000FF">/&gt;</span>
+    ...
+<strong class="markLine">    <span style="color:#0000FF">&lt;</span><span style="color:#800000">script</span> <span style="color:#FF0000">src</span>=<span style="color:#0000FF">&quot;https://code.jquery.com/jquery-1.10.2.js&quot;</span> <span style="color:#FF0000">type</span>=<span style="color:#0000FF">&quot;application/javascript&quot;</span><span style="color:#0000FF">&gt;</span><span style="color:#0000FF">&lt;/</span><span style="color:#800000">script</span><span style="color:#0000FF">&gt;</span></strong>
+    <span style="color:#0000FF">&lt;</span><span style="color:#800000">script</span> <span style="color:#FF0000">src</span>=<span style="color:#0000FF">&quot;app.js&quot;</span> <span style="color:#FF0000">type</span>=<span style="color:#0000FF">&quot;application/javascript&quot;</span><span style="color:#0000FF">&gt;</span><span style="color:#0000FF">&lt;/</span><span style="color:#800000">script</span><span style="color:#0000FF">&gt;</span>
+<span style="color:#0000FF">&lt;/</span><span style="color:#800000">head</span><span style="color:#0000FF">&gt;</span>
+</code></pre>
+
+<p>Now that you have a reference to jQuery, you can begin using it to simplify your JavaScript.</p>
+
+<h3 id="Simplify_your_code">Simplify your code</h3>
+
+<p>Remember in the last module we added content to our page when the number was invalid. As a reminder, here is the code.</p>
+
+<span class="codelanguage">javascript</span><pre><code class="javascript"><span style="color:#0000FF">function</span> checkNumber() {
+    <span style="color:#0000FF">var</span> theNumber, theMessage;
+
+    <span style="color:#008000">// Get the value of the input field with id=&quot;numb&quot;</span>
+    theNumber = <span style="color:#0000FF">document</span>.getElementById(<span style="color:#8B0000">&quot;smallnumber&quot;</span>).value;
+
+    <span style="color:#008000">// If x is Not a Number or less than one or greater than 10</span>
+    <span style="color:#0000FF">if</span> (<span style="color:#0000FF">isNaN</span>(theNumber) || theNumber &lt; 1 || theNumber &gt; 10) {
+        theMessage = <span style="color:#8B0000">&quot;Number was expected to be between 1 and 10&quot;</span>;
+    } <span style="color:#0000FF">else</span> {
+        theMessage = <span style="color:#8B0000">&quot;Number is Good&quot;</span>;
+    }
+    <span style="color:#0000FF">document</span>.getElementById(<span style="color:#8B0000">&quot;numberMessage&quot;</span>).innerHTML = theMessage;
+
+}
+</code></pre>
+
+<p>With JQuery, we can simplify the lines that use <code>document.getElementById('id')</code> to use the jQuery function <code>$('id')</code>. The function does things a little differently, but here's how the new code could look with using jQuery.</p>
+
+<span class="codelanguage">javascript</span><pre><code class="javascript"><span style="color:#0000FF">function</span> checkNumber() {
+    <span style="color:#0000FF">var</span> theNumber, theMessage;
+
+    <span style="color:#008000">// Get the value of the input field with id=&quot;numb&quot;</span>
+    theNumber = $(&#39;#smallnumber&#39;).val();
+
+    <span style="color:#008000">// If x is Not a Number or less than one or greater than 10</span>
+    <span style="color:#0000FF">if</span> (<span style="color:#0000FF">isNaN</span>(theNumber) || theNumber &lt; 1 || theNumber &gt; 10) {
+        theMessage = <span style="color:#8B0000">&quot;Number was expected to be between 1 and 10&quot;</span>;
+    } <span style="color:#0000FF">else</span> {
+        theMessage = <span style="color:#8B0000">&quot;Number is Good&quot;</span>;
+    }
+    $(&#39;#numberMessage&#39;).text(theMessage);
+}
+</code></pre>
+
+<p>Notice we have something new in our code...the '$'. This actually represents all of the code that was loaded by the jQuery library. Next, inside the parenthesis, we use the same approach that we use in CSS for selecting an HTML Element. '#' for an ID, '.' for a class or just that tag name for a tag. In other words, <code>$(#smallnumber)</code> means &quot;select the element with an ID of 'smallnumber'&quot;. </p>
+
+<p>Now, don't be confused but it is <strong>NOT</strong> the same thing as <code>document.getElementById(&quot;smallnumber&quot;)</code>. Notice, that you have to use the jQuery <code>val()</code> function and not the javascript <code>value</code> function. If you are going to use jQuery to modify the document, then you should <em>always</em> use jQuery. Don't switch back and forth...it will get confusing for you (and potentially other developers you are working with).</p>
+
+<h3 id="Getting_content_from_another_website">Getting content from another website</h3>
+
+<p>Great, now that we have a handle on how jQuery is going to help us, we are going to use a very useful function for calling other websites. There is lots of great information out on the internet that we can take advantage of. For example, weather is one of those things that there are sensors all over the world that we can ask for the current temperature.</p>
+
+<p>Programmers expose this information through an API or an &quot;Application Programming Interface&quot;. Sometimes, you will get this information for free, sometimes you will have to sign up and pay a fee. Everything from weather, to mapping, sending text messages to a phone, to stock market prices...you name it, there is probably an API for you to take advantage of.</p>
+
+<p>In this section, we have a simple API to call to get an image from the web.</p>
+
+<p>First, we will need to create a placeholder for the image. Let's go back to our final Bootstrap row and add the content to our page. We'll take the center six grid section <code>&lt;div class=&quot;col-sm-6&quot;&gt;</code> and change it to be five columns and add a one column div. Next, we'll add a paragraph &quot;&lt;p&gt;&quot; tag to that &lt;div&gt; and give it an id of &quot;badge&quot;.</p>
+
+<span class="codelanguage">html</span><pre><code class="html">    <span style="color:#0000FF">&lt;</span><span style="color:#800000">div</span> <span style="color:#FF0000">class</span>=<span style="color:#0000FF">&quot;container-fluid&quot;</span><span style="color:#0000FF">&gt;</span>
+        <span style="color:#0000FF">&lt;</span><span style="color:#800000">div</span> <span style="color:#FF0000">class</span>=<span style="color:#0000FF">&quot;row&quot;</span><span style="color:#0000FF">&gt;</span>
+            <span style="color:#0000FF">&lt;</span><span style="color:#800000">div</span> <span style="color:#FF0000">class</span>=<span style="color:#0000FF">&quot;col-sm-3&quot;</span><span style="color:#0000FF">&gt;</span><span style="color:#0000FF">&lt;/</span><span style="color:#800000">div</span><span style="color:#0000FF">&gt;</span>
+            <span style="color:#0000FF">&lt;</span><span style="color:#800000">div</span> <span style="color:#FF0000">class</span>=<span style="color:#0000FF">&quot;col-sm-5&quot;</span><span style="color:#0000FF">&gt;</span>
+                <span style="color:#0000FF">&lt;</span><span style="color:#800000">a</span> <span style="color:#FF0000">name</span>=<span style="color:#0000FF">&quot;contact&quot;</span><span style="color:#0000FF">&gt;</span>Contact Us<span style="color:#0000FF">&lt;/</span><span style="color:#800000">a</span><span style="color:#0000FF">&gt;</span>
+                <span style="color:#0000FF">&lt;</span><span style="color:#800000">p</span><span style="color:#0000FF">&gt;</span>Anytown Chamber of Commerce<span style="color:#0000FF">&lt;/</span><span style="color:#800000">p</span><span style="color:#0000FF">&gt;</span>
+                <span style="color:#0000FF">&lt;</span><span style="color:#800000">p</span><span style="color:#0000FF">&gt;</span>123 Main St.<span style="color:#0000FF">&lt;/</span><span style="color:#800000">p</span><span style="color:#0000FF">&gt;</span>
+                <span style="color:#0000FF">&lt;</span><span style="color:#800000">p</span><span style="color:#0000FF">&gt;</span>Anytown, OH 43210<span style="color:#0000FF">&lt;/</span><span style="color:#800000">p</span><span style="color:#0000FF">&gt;</span>
+            <span style="color:#0000FF">&lt;/</span><span style="color:#800000">div</span><span style="color:#0000FF">&gt;</span>
+            <span style="color:#0000FF">&lt;</span><span style="color:#800000">div</span> <span style="color:#FF0000">class</span>=<span style="color:#0000FF">&quot;col-sm-1&quot;</span><span style="color:#0000FF">&gt;</span>
+                <span style="color:#0000FF">&lt;</span><span style="color:#800000">p</span> <span style="color:#FF0000">id</span>=<span style="color:#0000FF">&quot;badge&quot;</span><span style="color:#0000FF">&gt;</span><span style="color:#0000FF">&lt;/</span><span style="color:#800000">p</span><span style="color:#0000FF">&gt;</span>
+            <span style="color:#0000FF">&lt;/</span><span style="color:#800000">div</span><span style="color:#0000FF">&gt;</span>
+        <span style="color:#0000FF">&lt;/</span><span style="color:#800000">div</span><span style="color:#0000FF">&gt;</span>
+    <span style="color:#0000FF">&lt;/</span><span style="color:#800000">div</span><span style="color:#0000FF">&gt;</span>
+</code></pre>
+
+<p>Now we need to add some JavaScript to our app.js file. In this script, we are defining a function &quot;getAPIBadge&quot; that points to an API running in Microsoft Azure. We are going to use jQuery to &quot;post&quot; data to the API. Copy this code and modify the SchoolName, ZipCode and Level (&quot;Beginner&quot; or &quot;Experienced&quot;).</p>
+
+<p>When this function is complete, the &quot;.done&quot; function will run and jQuery will replace the contents on the paragraph tags with the HTML that comes back from the API.</p>
+
+<!-- mark: 4 - 6 -->
+
+<span class="codelanguage">javascript</span><pre><code class="javascript"><span style="color:#0000FF">function</span> getAPIBadge() {
+    <span style="color:#0000FF">var</span> ctcAPI = <span style="color:#8B0000">&quot;http://ChooseToCodeAPI.azurewebsites.net/api/values/&quot;</span>;
+    $.post( ctcAPI, { 
+<strong class="markLine">        SchoolName:<span style="color:#8B0000">&quot;YourSchoolNameHere&quot;</span>, </strong>
+<strong class="markLine">        ZipCode: <span style="color:#8B0000">&quot;YourZipCodeHere&quot;</span>, </strong>
+<strong class="markLine">        Level:<span style="color:#8B0000">&quot;Beginner&quot;</span></strong>
+    }).done(<span style="color:#0000FF">function</span>( data ) {
+        $(<span style="color:#8B0000">&quot;#badge&quot;</span>).html(data);
+    });
+}
+</code></pre>
+
+<p>Finally, modify the onLoad method to call the &quot;getAPIBadge&quot; method once the document has completed loading.</p>
+
+<span class="codelanguage">javascript</span><pre><code class="javascript"><span style="color:#0000FF">function</span> onLoad() {
+    <span style="color:#0000FF">document</span>.getElementById(<span style="color:#8B0000">&quot;timestamp&quot;</span>).innerHTML = <span style="color:#0000FF">Date</span>();
+    getAPIBadge();
+}
+</code></pre>
+
+<h3 id="Congratulations">Congratulations</h3>
+
+<p>You have completed this module and called an API on another web page to pull data into your website. There are many other APIs that you can investigate and take advantage of. Almost all common APIs have sample projects to help you get started with integration into your own website. Here are a few favorites to look into.</p>
+
+<table><thead>
+<tr>
+<td><strong>API Data Type</strong></td>
+<td><strong>URL</strong></td>
+</tr>
+</thead><tbody>
+<tr>
+<td>Bing Maps</td>
+<td><a href="http://www.microsoft.com/maps/choose-your-bing-maps-API.aspx">http://www.microsoft.com/maps/choose-your-bing-maps-API.aspx</a></td>
+</tr>
+<tr>
+<td>Twitter</td>
+<td><a href="https://dev.twitter.com/rest/public">https://dev.twitter.com/rest/public</a></td>
+</tr>
+<tr>
+<td>Weather.Com</td>
+<td><a href="http://openweathermap.org/API">http://openweathermap.org/API</a></td>
+</tr>
+</tbody></table>
+</div>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>My First Web Page</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" rel="text/javascript" />    
+    <link href="app.css" rel="stylesheet"/>
+    <script src="https://code.jquery.com/jquery-1.10.2.js" type="application/javascript"></script>
+    <script src="app.js" type="application/javascript"></script>    
+</head>
+
+<body onload="onLoad()">
+    <header class="container-fluid">
+        <h1>Visit Anytown, USA!</h1>
+    </header> 
+ 
+    <nav class="container-fluid">
+        <ul class="nav navbar-inverse navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="http://www.bing.com/search?q=amazing%20places">Amazing Places</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container-fluid">
+        <div class="row">
+       
+            <section class="col-sm-6 col-sm-push-3">
+                
+                <input id="smallnumber" type="number">
+                <p id="numberMessage"></p>
+                <button onclick="checkNumber()">Submit</button>
+                
+                <div class="row">
+                    <article>
+                        <h2>Amazing Museums</h2>
+                        <div class="col-sm-3">
+                            <img src="http://lorempixel.com/200/100/city/1" />
+                        </div>
+                        <div class="col-sm-9">
+                            <p>While most museums are a collection of old artifacts and stuff that no one is really interested in seeing, our musuems are the best of the best.</p>
+                            <p>You won't find anything like these any where else in the world. Our museums rival that of our closest competitors including the Museum of Bad Art, the Paris Sewers Musuem and the Museum of Broken Relationships.</p>
+                            <p>Come check them out...the fun is waiting for you.</p>
+                        </div>
+                    </article>
+                    
+                    <article>
+                        <h2>SplashAnyone Waterpark</h2>
+                        <div class="col-sm-3">
+                            <img src="http://lorempixel.com/200/100/city/2" />
+                        </div>
+                        <div class="col-sm-9">
+                            <p>Our waterpark is the biggest and best park in the Western World. Just south of interstate 2015, you'll find a sweet mix of Super Slides and lazy rivers.</p>
+                            <p>If that wasn't enough, we have 376 of the best food trucks in the state serving everything from fried gummy bears to lemonade and pizza. Don't forget if you buy our collectors edition souvenir water park keepsake, you get free refills all year.</p>
+                            <p>And we wouldn't be SplashAnyone without the rules about splashing ... wait there are no rules.</p>
+                        </div>
+                    </article>
+                    
+                    <article>
+                        <h2>Best Zoo in Town</h2>
+                        <div class="col-sm-3">
+                            <img src="http://lorempixel.com/200/100/city/3" />
+                        </div>
+                        <div class="col-sm-9">
+                            <p>Finally, you won't want to miss out cuddly little zoo animals. Lions, tigers and bears...Oh My! We have the largest selection of born in captivity animals. We didn't want to take the from their natural habitat, so we just got them from the other zoos in the state.</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            
+            <aside class="col-sm-3 col-sm-pull-6">
+                <h2 class="title">Things to Do</h2> 
+                <ul>
+                    <li><a href="http://www.bing.com/search?q=hiking">Hiking</a></li>
+                    <li><a href="http://www.bing.com/search?q=biking">Biking</a></li>
+                    <li><a href="http://www.bing.com/search?q=horseback">Horseback</a></li>
+                    <li><a href="http://www.bing.com/search?q=backpacking">Backpacking</a></li>
+                </ul>
+            </aside>            
+            
+            <aside class="col-sm-3">
+                <h2>How to Get Here</h2>
+                <ol id="orderedlist">
+                    <li>By Plane</li>
+                    <li>By Train</li>
+                    <li>By Automobile</li>
+                    <li>By Boat</li>
+                </ol>
+            </aside>
+        </div>
+	</div>
+    
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-5">
+                <a name="contact">Contact Us</a>
+                <p>Anytown Chamber of Commerce</p>
+                <p>123 Main St.</p>
+                <p>Anytown, OH 43210</p>
+            </div>
+            <div class="col-sm-1">
+                <p id="badge"></p>
+            </div>
+        </div>
+    </div>  
+        
+    <footer class="container-fluid">
+        Copyright 2015
+        <p id="timestamp"></p>    
+    </footer>
+    
+</body>
+
+</html>

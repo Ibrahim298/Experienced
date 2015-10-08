@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Module 9 - Choose To Code</title>
+<style>
+body{font-family:helvetica, arial, freesans, clean, sans-serif;color:#333;line-height:1.6;font-size:14px}.markdown-body{line-height:1.6;font-size:14px}.markdown-body > *:first-child{margin-top:0 !important}.markdown-body > *:last-child{margin-bottom:0 !important}.markdown-body a.absent{color:#c00}.markdown-body h1{font-weight:700;-webkit-font-smoothing:antialiased;color:#000;font-size:28px;margin:20px 0 10px;padding:0}.markdown-body h2{font-weight:700;-webkit-font-smoothing:antialiased;color:#000;font-size:24px;border-bottom-color:#ccc;border-bottom-width:1px;border-bottom-style:solid;margin:20px 0 10px;padding:0}.markdown-body h3{font-weight:700;-webkit-font-smoothing:antialiased;font-size:18px;margin:20px 0 10px;padding:0}.markdown-body h4{font-weight:700;-webkit-font-smoothing:antialiased;font-size:16px;margin:20px 0 10px;padding:0}.markdown-body h5{font-weight:700;-webkit-font-smoothing:antialiased;font-size:14px;margin:20px 0 10px;padding:0}.markdown-body h6{font-weight:700;-webkit-font-smoothing:antialiased;color:#777;font-size:14px;margin:20px 0 10px;padding:0}.markdown-body blockquote{color:#777;border-left-color:#ddd;border-left-width:4px;border-left-style:solid;margin:15px 0;padding:0 15px}.markdown-body dl{margin:15px 0;padding:0}.markdown-body table{border-collapse:collapse;margin:15px 0;padding:0}.markdown-body pre{border-radius:3px;border:1px solid #ccc;line-height:19px;overflow:auto;font-size:13px;background-color:#f8f8f8;margin:15px 0;padding:6px 10px}.markdown-body li p.first{display:inline-block}.markdown-body dl dt{font-size:14px;font-style:italic;font-weight:700;margin:15px 0 5px;padding:0}.markdown-body dl dt:first-child{padding:0}.markdown-body dl dd{margin:0 0 15px;padding:0 15px}.markdown-body table tr{border-top-color:#ccc;border-top-width:1px;border-top-style:solid;background-color:#fff;margin:0;padding:0}.markdown-body table tr:nth-child(2n){background-color:#f8f8f8}.markdown-body img{max-width:100%}.markdown-body span.frame{overflow:hidden;display:block}.markdown-body span.frame > span{border:1px solid #ddd;width:auto;overflow:hidden;float:left;display:block;margin:13px 0 0;padding:7px}.markdown-body span.frame span img{float:left;display:block}.markdown-body span.frame span span{color:#333;clear:both;display:block;padding:5px 0 0}.markdown-body span.align-center > span{text-align:center;overflow:hidden;display:block;margin:13px auto 0}.markdown-body span.align-center span img{text-align:center;margin:0 auto}.markdown-body span.align-right > span{text-align:right;overflow:hidden;display:block;margin:13px 0 0}.markdown-body span.align-right span img{text-align:right;margin:0}.markdown-body span.float-left{overflow:hidden;margin-right:13px;float:left;display:block}.markdown-body span.float-left span{margin:13px 0 0}.markdown-body span.float-right{overflow:hidden;margin-left:13px;float:right;display:block}.markdown-body span.float-right > span{text-align:right;overflow:hidden;display:block;margin:13px auto 0}.markdown-body pre > code{border:currentColor;white-space:pre;margin:0;padding:0}.markdown-body .highlight pre{border-radius:3px;border:1px solid #ccc;line-height:19px;overflow:auto;font-size:13px;background-color:#f8f8f8;padding:6px 10px}.markdown-body p,.markdown-body li{margin:15px 0}.markdown-body ul,.markdown-body ol{padding-left:30px;margin:15px 0}.markdown-body > h2:first-child,.markdown-body > h1:first-child,.markdown-body > h1:first-child + h2{border:0 currentColor;padding-top:0;margin-top:0}.markdown-body > h3:first-child,.markdown-body > h4:first-child,.markdown-body > h5:first-child,.markdown-body > h6:first-child{padding-top:0;margin-top:0}.markdown-body h1 + p,.markdown-body h2 + p,.markdown-body h3 + p,.markdown-body h4 + p,.markdown-body h5 + p,.markdown-body h6 + p,.markdown-body ul li > :first-child,.markdown-body ol li > :first-child,.markdown-body dl dt > :first-child,.markdown-body dl dd > :first-child,.markdown-body blockquote > :first-child,.markdown-body table tr th > :first-child,.markdown-body table tr td > :first-child{margin-top:0}.markdown-body ul li > :last-child,.markdown-body ol li > :last-child,.markdown-body dl dt > :last-child,.markdown-body dl dd > :last-child,.markdown-body blockquote > :last-child,.markdown-body table tr th > :last-child,.markdown-body table tr td > :last-child{margin-bottom:0}.markdown-body table tr th,.markdown-body table tr td{border:1px solid #ccc;text-align:left;margin:0;padding:6px 13px}.markdown-body span.align-center,.markdown-body span.align-right{overflow:hidden;clear:both;display:block}.markdown-body code,.markdown-body tt{border-radius:3px;border:1px solid #eaeaea;white-space:nowrap;background-color:#f8f8f8;margin:0 2px;padding:0 5px}.markdown-body pre code,.markdown-body pre tt{border:currentColor;background-color:transparent}span.codelanguage{display:none}
+</style>
+</head>
+<body>
+<div class="markdown-body">
+<h2 id="Introduction_to_AngularJS">Introduction to AngularJS</h2>
+
+<h3 id="Objectives">Objectives:</h3>
+
+<ul>
+<li>Introduction to AngularJS</li>
+<li>Update HTML on the Fly with Javascript</li>
+</ul>
+
+<h3 id="What_is_AngularJS">What is AngularJS</h3>
+
+<p>In the next couple of modules, we are going to look at a JavaScript framework for dynamic web pages. Your HTML will move away from having so much content already filled in and become more like a template for displaying content we will pull from a service. Using a framework like AngularJS removes a lot of the code that you would otherwise have to write and simplifies your pages dramatically.</p>
+
+<p>The AngularJS framework implements a common pattern for code design called &quot;MVC&quot;. MVC stands for Model/View/Controller. Models will be created to hold data for display. Views are the way the data is presented. Controllers are what manage the interaction of the views and data. While we won't cover the design pattern much here, much of the code that we will create will follow the MVC naming approach.</p>
+
+<h3 id="Lets_Get_Started">Let's Get Started</h3>
+
+<p>As we have seen in earlier modules, we will add a reference to a content delivery version of the AngularJS libraries. Alternatively, these could be downloaded to your computer and stored in your script folder.</p>
+
+<span class="codelanguage">html</span><pre><code class="html"><span style="color:#0000FF">&lt;</span><span style="color:#800000">script</span> <span style="color:#FF0000">src</span>=<span style="color:#0000FF">&quot;https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.min.js&quot;</span><span style="color:#0000FF">&gt;</span><span style="color:#0000FF">&lt;/</span><span style="color:#800000">script</span><span style="color:#0000FF">&gt;</span>
+</code></pre>
+
+<p>Next, we need to modify our existing app.js file to create a new AngularJS module. What is an AngularJS Module? You can think of a module as a container for the different parts of your app – controllers, services, filters, directives, etc.</p>
+
+<p>We're to call this <strong>angularApp</strong>, but you could call it whatever you want. Let's put the following line of code at the top of your <strong>app.js</strong> file.</p>
+
+<span class="codelanguage">Javascript</span><pre><code class="Javascript"><span style="color:#0000FF">var</span> app = angular.module(<span style="color:#8B0000">&quot;angularApp&quot;</span>, []);
+</code></pre>
+
+<p>Now that we have an AngularJS module, we need to put a directive in out HTML that tells where the module can be used. This is also called the <em>application scope</em>. </p>
+
+<span class="codelanguage">html</span><pre><code class="html"><span style="color:#0000FF">&lt;</span><span style="color:#800000">body</span> <span style="color:#FF0000">onload</span>=<span style="color:#0000FF">&quot;onLoad();&quot;</span> <span style="color:#FF0000">ng</span>-<span style="color:#FF0000">app</span>=<span style="color:#0000FF">&quot;angularApp&quot;</span><span style="color:#0000FF">&gt;</span>
+</code></pre>
+
+<p>Now, to keep the current time code functional, you will need to add some code to make that happen. Since this is the main page, let's add a new JavaScript file for the AngularJS code for this page. We'll use the standard naming and call it <strong>MainController.js</strong>. Let's also add the following code.</p>
+
+<span class="codelanguage">JavaScript</span><pre><code class="JavaScript">app.controller(&#39;MainController&#39;, [&#39;$scope&#39;, <span style="color:#0000FF">function</span>($scope) { 
+  $scope.timestamp = <span style="color:#0000FF">Date</span>(); 
+}]);
+</code></pre>
+
+<p>Back on the <strong>index.html</strong> page we need to make a few more modifications to the content. First, in the &lt;head&gt; tag, we need to add a reference to our <strong>MainController.js</strong> file</p>
+
+<!-- mark:5 -->
+
+<span class="codelanguage">HTML</span><pre><code class="HTML"><span style="color:#0000FF">&lt;</span><span style="color:#800000">head</span><span style="color:#0000FF">&gt;</span>
+    <span style="color:#0000FF">&lt;</span><span style="color:#800000">title</span><span style="color:#0000FF">&gt;</span>My First Web Page<span style="color:#0000FF">&lt;/</span><span style="color:#800000">title</span><span style="color:#0000FF">&gt;</span>
+    ...
+    <span style="color:#0000FF">&lt;</span><span style="color:#800000">script</span> <span style="color:#FF0000">src</span>=<span style="color:#0000FF">&quot;scripts/app.js&quot;</span> <span style="color:#FF0000">type</span>=<span style="color:#0000FF">&quot;application/javascript&quot;</span><span style="color:#0000FF">&gt;</span><span style="color:#0000FF">&lt;/</span><span style="color:#800000">script</span><span style="color:#0000FF">&gt;</span>
+<strong class="markLine">    <span style="color:#0000FF">&lt;</span><span style="color:#800000">script</span> <span style="color:#FF0000">src</span>=<span style="color:#0000FF">&quot;scripts/MainController.js&quot;</span> <span style="color:#FF0000">type</span>=<span style="color:#0000FF">&quot;application/javascript&quot;</span><span style="color:#0000FF">&gt;</span><span style="color:#0000FF">&lt;/</span><span style="color:#800000">script</span><span style="color:#0000FF">&gt;</span></strong>
+<span style="color:#0000FF">&lt;/</span><span style="color:#800000">head</span><span style="color:#0000FF">&gt;</span>
+</code></pre>
+
+<p>Next, add a &lt;div&gt; around all of the content of the page and specify that it will be controlled by the MainController we just created. The &quot;ng-controller&quot; attribute will define the <em>controller scope</em> for our page. When the timestamp is set on the <code>$scope</code> it is on the scope of the controller.</p>
+
+<!-- mark: 2 -->
+
+<span class="codelanguage">html</span><pre><code class="html"><span style="color:#0000FF">&lt;</span><span style="color:#800000">body</span> <span style="color:#FF0000">ng</span>-<span style="color:#FF0000">app</span>=<span style="color:#0000FF">&quot;angularApp&quot;</span><span style="color:#0000FF">&gt;</span>
+<strong class="markLine">    <span style="color:#0000FF">&lt;</span><span style="color:#800000">div</span> <span style="color:#FF0000">ng</span>-<span style="color:#FF0000">controller</span>=<span style="color:#0000FF">&quot;MainController&quot;</span><span style="color:#0000FF">&gt;</span></strong>
+        <span style="color:#0000FF">&lt;</span><span style="color:#800000">header</span> <span style="color:#FF0000">class</span>=<span style="color:#0000FF">&quot;container-fluid&quot;</span><span style="color:#0000FF">&gt;</span>
+        ...
+        <span style="color:#0000FF">&lt;/</span><span style="color:#800000">footer</span><span style="color:#0000FF">&gt;</span>
+    <span style="color:#0000FF">&lt;/</span><span style="color:#800000">div</span><span style="color:#0000FF">&gt;</span>
+<span style="color:#0000FF">&lt;/</span><span style="color:#800000">body</span><span style="color:#0000FF">&gt;</span>
+</code></pre>
+
+<p>Finally, change the footer to remove the id from the &lt;p&gt; tag and put in the AngularJS expression for the &quot;timestamp&quot; property of the controller scope:</p>
+
+<!-- mark: 3 -->
+
+<span class="codelanguage">html</span><pre><code class="html"><span style="color:#0000FF">&lt;</span><span style="color:#800000">footer</span><span style="color:#0000FF">&gt;</span>
+    <span style="color:#0000FF">&lt;</span><span style="color:#800000">h1</span><span style="color:#0000FF">&gt;</span>Copyright 2015<span style="color:#0000FF">&lt;/</span><span style="color:#800000">h1</span><span style="color:#0000FF">&gt;</span>
+<strong class="markLine">    <span style="color:#0000FF">&lt;</span><span style="color:#800000">p</span><span style="color:#0000FF">&gt;</span>{{ timestamp }}<span style="color:#0000FF">&lt;/</span><span style="color:#800000">p</span><span style="color:#0000FF">&gt;</span></strong>
+<span style="color:#0000FF">&lt;/</span><span style="color:#800000">footer</span><span style="color:#0000FF">&gt;</span>
+</code></pre>
+
+<p>Save and load the <strong>index.html</strong> page in your browser. Notice how our markup no longer has to define a &quot;id&quot; so that our code can replace the &quot;timestamp&quot;. By simply using the scope property in the markup, it is more clear what the intent of this section of markup will do. This simplicity is part of what make frameworks like AngularJS so popular.</p>
+
+<p>Before we move on, let's clean up the <strong>app.js</strong> code since the code to insert the timestamp isn't called any more. Good developers should always remove code that is no longer called to keep the needed code clutter free. This is our code right now...</p>
+
+<span class="codelanguage">JavaScript</span><pre><code class="JavaScript"><span style="color:#0000FF">var</span> app = angular.module(<span style="color:#8B0000">&quot;angularApp&quot;</span>, []);
+
+<span style="color:#0000FF">function</span> onLoad() {
+    getAPIBadge();
+}
+</code></pre>
+
+<h3 id="A_Word_About_Structure">A Word About Structure</h3>
+
+<p>All of the code files you create can be created right next to your HTML files and your image files. However, this can get messy very quickly, and it can be very difficult to find files when you need them.</p>
+
+<p>Typical web projects structure files that are similar in their own folder like the following:</p>
+
+<pre><code>index.html
+content (folder)
+    app.css
+scripts (folder)
+    app.js
+    MainController.js
+images (folder)
+    picture1.jpg
+</code></pre>
+
+<p>Let's do that now. Make an additional folder for &quot;scripts&quot; and move the <strong>app.js</strong> and <strong>MainController.js</strong> files to that folder. Additionally, make a folder called &quot;content&quot; and move the <strong>app.css</strong> file there. Make sure you update the content in the <strong>index.html</strong> file to reflect your new file locations.</p>
+
+<!-- mark: 3,8,9 -->
+
+<span class="codelanguage">HTML</span><pre><code class="HTML"><span style="color:#0000FF">&lt;</span><span style="color:#800000">head</span><span style="color:#0000FF">&gt;</span>
+    <span style="color:#0000FF">&lt;</span><span style="color:#800000">title</span><span style="color:#0000FF">&gt;</span>My First Web Page<span style="color:#0000FF">&lt;/</span><span style="color:#800000">title</span><span style="color:#0000FF">&gt;</span>
+<strong class="markLine">    <span style="color:#0000FF">&lt;</span><span style="color:#800000">link</span> <span style="color:#FF0000">href</span>=<span style="color:#0000FF">&quot;content/app.css&quot;</span> <span style="color:#FF0000">rel</span>=<span style="color:#0000FF">&quot;stylesheet&quot;</span> <span style="color:#0000FF">/&gt;</span></strong>
+    <span style="color:#0000FF">&lt;</span><span style="color:#800000">link</span> <span style="color:#FF0000">href</span>=<span style="color:#0000FF">&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css&quot;</span> <span style="color:#FF0000">rel</span>=<span style="color:#0000FF">&quot;stylesheet&quot;</span> <span style="color:#0000FF">/&gt;</span>
+    <span style="color:#0000FF">&lt;</span><span style="color:#800000">link</span> <span style="color:#FF0000">href</span>=<span style="color:#0000FF">&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.jss&quot;</span> <span style="color:#FF0000">rel</span>=<span style="color:#0000FF">&quot;text/javascript&quot;</span> <span style="color:#0000FF">/&gt;</span>
+    <span style="color:#0000FF">&lt;</span><span style="color:#800000">script</span> <span style="color:#FF0000">src</span>=<span style="color:#0000FF">&quot;https://code.jquery.com/jquery-1.10.2.js&quot;</span> <span style="color:#FF0000">type</span>=<span style="color:#0000FF">&quot;application/javascript&quot;</span><span style="color:#0000FF">&gt;</span><span style="color:#0000FF">&lt;/</span><span style="color:#800000">script</span><span style="color:#0000FF">&gt;</span>
+    <span style="color:#0000FF">&lt;</span><span style="color:#800000">script</span> <span style="color:#FF0000">src</span>=<span style="color:#0000FF">&quot;https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.min.js&quot;</span><span style="color:#0000FF">&gt;</span><span style="color:#0000FF">&lt;/</span><span style="color:#800000">script</span><span style="color:#0000FF">&gt;</span>
+<strong class="markLine">    <span style="color:#0000FF">&lt;</span><span style="color:#800000">script</span> <span style="color:#FF0000">src</span>=<span style="color:#0000FF">&quot;scripts/app.js&quot;</span> <span style="color:#FF0000">type</span>=<span style="color:#0000FF">&quot;application/javascript&quot;</span><span style="color:#0000FF">&gt;</span><span style="color:#0000FF">&lt;/</span><span style="color:#800000">script</span><span style="color:#0000FF">&gt;</span></strong>
+<strong class="markLine">    <span style="color:#0000FF">&lt;</span><span style="color:#800000">script</span> <span style="color:#FF0000">src</span>=<span style="color:#0000FF">&quot;scripts/MainController.js&quot;</span> <span style="color:#FF0000">type</span>=<span style="color:#0000FF">&quot;application/javascript&quot;</span><span style="color:#0000FF">&gt;</span><span style="color:#0000FF">&lt;/</span><span style="color:#800000">script</span><span style="color:#0000FF">&gt;</span></strong>
+<span style="color:#0000FF">&lt;/</span><span style="color:#800000">head</span><span style="color:#0000FF">&gt;</span>
+
+</code></pre>
+
+<p>Up until now, it wasn't a big deal because there was only one javascript file, one css file and one html page. Consider how many files we would have if we had downloaded the bootstrap, jquery and AngularJS files to our local machine. It gets messy very quickly.</p>
+
+<h3 id="Taking_AngularJS_farther">Taking AngularJS farther</h3>
+
+<p>One of the other keys to a framework like AngularJS being so popular is that it takes little to no code to do what is called &quot;data binding&quot;. Earlier, we put a textbox on the page that when the user clicked &quot;submit&quot; a message would warn them if the number wasn't valid. We had to have code that would find the control, get the number and then make a check, then find the element where we wanted to put the message and replace the text. With binding that goes away and we can assign the value as the data is entered, make the check and assign the message all using the controller <em>$scope</em></p>
+
+<p>Let's do that now.</p>
+
+<p>First, let's add a few properties to our scope in the MainController. We'll add a <strong>smallnumber</strong> and <strong>theMessage</strong> values that we were tracking in our JavaScript code. While we're at it, let's add another property to the scope and assign to a function. We'll call it <strong>checkNumber</strong>.</p>
+
+<p>Here's what your MainController should look like now:</p>
+
+<!-- mark: 3-11 -->
+
+<span class="codelanguage">JavaScript</span><pre><code class="JavaScript">app.controller(&#39;MainController&#39;, [&#39;$scope&#39;, <span style="color:#0000FF">function</span>($scope) { 
+    $scope.timestamp = <span style="color:#0000FF">Date</span>();
+<strong class="markLine">    $scope.smallnumber = 0;</strong>
+<strong class="markLine">    $scope.theMessage = <span style="color:#8B0000">&quot;&quot;</span>;</strong>
+<strong class="markLine">    $scope.checkNumber = <span style="color:#0000FF">function</span>(){</strong>
+<strong class="markLine">        <span style="color:#0000FF">if</span> (<span style="color:#0000FF">isNaN</span>($scope.smallnumber) || $scope.smallnumber &lt; 1 || $scope.smallnumber &gt; 10) {</strong>
+<strong class="markLine">            $scope.theMessage = <span style="color:#8B0000">&quot;Number was expected to be between 1 and 10&quot;</span>;</strong>
+<strong class="markLine">        } <span style="color:#0000FF">else</span> {</strong>
+<strong class="markLine">            $scope.theMessage = <span style="color:#8B0000">&quot;Number is Good&quot;</span>;</strong>
+<strong class="markLine">        }</strong>
+<strong class="markLine">    }</strong>
+}]);
+</code></pre>
+
+<p>Notice that our <strong>checkNumber</strong> function is quite a bit simpler now. Go ahead and remove the <strong>CheckNumber()</strong> function from your <strong>app.js</strong> file now.</p>
+
+<p>Back in the <strong>index.html</strong> file, we need to update the content to take advantage of the AngularJS MainController scope.</p>
+
+<span class="codelanguage">html</span><pre><code class="html"><span style="color:#0000FF">&lt;</span><span style="color:#800000">input</span> <span style="color:#FF0000">ng</span>-<span style="color:#FF0000">model</span>=<span style="color:#0000FF">&quot;smallnumber&quot;</span> <span style="color:#FF0000">type</span>=<span style="color:#0000FF">&quot;text&quot;</span><span style="color:#0000FF">&gt;</span>
+<span style="color:#0000FF">&lt;</span><span style="color:#800000">p</span><span style="color:#0000FF">&gt;</span>{{ theMessage }} <span style="color:#0000FF">&lt;/</span><span style="color:#800000">p</span><span style="color:#0000FF">&gt;</span>
+<span style="color:#0000FF">&lt;</span><span style="color:#800000">button</span> <span style="color:#FF0000">ng</span>-<span style="color:#FF0000">click</span>=<span style="color:#0000FF">&quot;checkNumber()&quot;</span><span style="color:#0000FF">&gt;</span>Submit<span style="color:#0000FF">&lt;/</span><span style="color:#800000">button</span><span style="color:#0000FF">&gt;</span>
+</code></pre>
+
+<p>Save your work, and reload the <strong>index.html</strong> page in a browser. Notice that when you enter a value in the textbox, the function on the controller scope executes and puts the correct message in the page.</p>
+
+<p>In the next module, we will see how the scope controller can pull data from a web site and very easily layout the content on the page.</p>
+
+</div>
+</body>
+</html>

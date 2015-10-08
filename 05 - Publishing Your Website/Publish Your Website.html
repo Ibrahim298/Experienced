@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Module 5 - Choose To Code</title>
+<style>
+body{font-family:helvetica, arial, freesans, clean, sans-serif;color:#333;line-height:1.6;font-size:14px}.markdown-body{line-height:1.6;font-size:14px}.markdown-body > *:first-child{margin-top:0 !important}.markdown-body > *:last-child{margin-bottom:0 !important}.markdown-body a.absent{color:#c00}.markdown-body h1{font-weight:700;-webkit-font-smoothing:antialiased;color:#000;font-size:28px;margin:20px 0 10px;padding:0}.markdown-body h2{font-weight:700;-webkit-font-smoothing:antialiased;color:#000;font-size:24px;border-bottom-color:#ccc;border-bottom-width:1px;border-bottom-style:solid;margin:20px 0 10px;padding:0}.markdown-body h3{font-weight:700;-webkit-font-smoothing:antialiased;font-size:18px;margin:20px 0 10px;padding:0}.markdown-body h4{font-weight:700;-webkit-font-smoothing:antialiased;font-size:16px;margin:20px 0 10px;padding:0}.markdown-body h5{font-weight:700;-webkit-font-smoothing:antialiased;font-size:14px;margin:20px 0 10px;padding:0}.markdown-body h6{font-weight:700;-webkit-font-smoothing:antialiased;color:#777;font-size:14px;margin:20px 0 10px;padding:0}.markdown-body blockquote{color:#777;border-left-color:#ddd;border-left-width:4px;border-left-style:solid;margin:15px 0;padding:0 15px}.markdown-body dl{margin:15px 0;padding:0}.markdown-body table{border-collapse:collapse;margin:15px 0;padding:0}.markdown-body pre{border-radius:3px;border:1px solid #ccc;line-height:19px;overflow:auto;font-size:13px;background-color:#f8f8f8;margin:15px 0;padding:6px 10px}.markdown-body li p.first{display:inline-block}.markdown-body dl dt{font-size:14px;font-style:italic;font-weight:700;margin:15px 0 5px;padding:0}.markdown-body dl dt:first-child{padding:0}.markdown-body dl dd{margin:0 0 15px;padding:0 15px}.markdown-body table tr{border-top-color:#ccc;border-top-width:1px;border-top-style:solid;background-color:#fff;margin:0;padding:0}.markdown-body table tr:nth-child(2n){background-color:#f8f8f8}.markdown-body img{max-width:100%}.markdown-body span.frame{overflow:hidden;display:block}.markdown-body span.frame > span{border:1px solid #ddd;width:auto;overflow:hidden;float:left;display:block;margin:13px 0 0;padding:7px}.markdown-body span.frame span img{float:left;display:block}.markdown-body span.frame span span{color:#333;clear:both;display:block;padding:5px 0 0}.markdown-body span.align-center > span{text-align:center;overflow:hidden;display:block;margin:13px auto 0}.markdown-body span.align-center span img{text-align:center;margin:0 auto}.markdown-body span.align-right > span{text-align:right;overflow:hidden;display:block;margin:13px 0 0}.markdown-body span.align-right span img{text-align:right;margin:0}.markdown-body span.float-left{overflow:hidden;margin-right:13px;float:left;display:block}.markdown-body span.float-left span{margin:13px 0 0}.markdown-body span.float-right{overflow:hidden;margin-left:13px;float:right;display:block}.markdown-body span.float-right > span{text-align:right;overflow:hidden;display:block;margin:13px auto 0}.markdown-body pre > code{border:currentColor;white-space:pre;margin:0;padding:0}.markdown-body .highlight pre{border-radius:3px;border:1px solid #ccc;line-height:19px;overflow:auto;font-size:13px;background-color:#f8f8f8;padding:6px 10px}.markdown-body p,.markdown-body li{margin:15px 0}.markdown-body ul,.markdown-body ol{padding-left:30px;margin:15px 0}.markdown-body > h2:first-child,.markdown-body > h1:first-child,.markdown-body > h1:first-child + h2{border:0 currentColor;padding-top:0;margin-top:0}.markdown-body > h3:first-child,.markdown-body > h4:first-child,.markdown-body > h5:first-child,.markdown-body > h6:first-child{padding-top:0;margin-top:0}.markdown-body h1 + p,.markdown-body h2 + p,.markdown-body h3 + p,.markdown-body h4 + p,.markdown-body h5 + p,.markdown-body h6 + p,.markdown-body ul li > :first-child,.markdown-body ol li > :first-child,.markdown-body dl dt > :first-child,.markdown-body dl dd > :first-child,.markdown-body blockquote > :first-child,.markdown-body table tr th > :first-child,.markdown-body table tr td > :first-child{margin-top:0}.markdown-body ul li > :last-child,.markdown-body ol li > :last-child,.markdown-body dl dt > :last-child,.markdown-body dl dd > :last-child,.markdown-body blockquote > :last-child,.markdown-body table tr th > :last-child,.markdown-body table tr td > :last-child{margin-bottom:0}.markdown-body table tr th,.markdown-body table tr td{border:1px solid #ccc;text-align:left;margin:0;padding:6px 13px}.markdown-body span.align-center,.markdown-body span.align-right{overflow:hidden;clear:both;display:block}.markdown-body code,.markdown-body tt{border-radius:3px;border:1px solid #eaeaea;white-space:nowrap;background-color:#f8f8f8;margin:0 2px;padding:0 5px}.markdown-body pre code,.markdown-body pre tt{border:currentColor;background-color:transparent}span.codelanguage{display:none}
+</style>
+</head>
+<body>
+<div class="markdown-body">
+<h1 id="Publishing_a_Web_App_to_Azure">Publishing a Web App to Azure</h1>
+
+<h3 id="Objectives">Objectives:</h3>
+
+<ul>
+<li>Publish a simple web page</li>
+<li>Set up Continuous Deployment</li>
+<li>Use modern source control tools</li>
+</ul>
+
+<h3 id="Introduction">Introduction:</h3>
+
+<p>In this module you will learn how to publish a website to Microsoft Azure. We will start by creating a Web App on Azure to host your website for all the world to see. Then we'll set up a place for your source code and watch as Azure publishes your code to your website.</p>
+
+<h3 id="Create_an_Azure_Web_App">Create an Azure Web App</h3>
+
+<p>First, let's get started with creating a place to put your new website. At this point, you need to have an active Azure subscription and a machine set up with Visual Studio Code and Git.</p>
+
+<p>We are going to start at the Azure portal. With your browser, navigate to <a href="http://portal.azure.com">http://portal.azure.com</a> and sign in if you need to. Go ahead and do that now and you should arrive at the portal home page.</p>
+
+<p>In the upper left corner, click the plus sign or &quot;New&quot; button (1) to create a new Azure resource.</p>
+
+<p><img src="images/azure-portal-home.png?raw=true" alt="Azure Portal Home">
+</p>
+
+<p>In the Create blade that comes up, click the &quot;Web + Mobile&quot; (1) option and then select &quot;Web App&quot; (2) to begin creating a Web App resource for your website.</p>
+
+<p><img src="images/azure-create-resource.png?raw=true" alt="Azure Create Resource">
+</p>
+
+<p>Next, in the &quot;Web App&quot; blade that comes up, we will enter a little bit of information about your website. First, you need a name for your website. The name will be created at &quot;.azurewebsites.net&quot;. The name will need to be unique and you should get a green checkmark (1) when you have a valid web app name. Next, you will choose the subscription to be used for your Azure web app (2). The &quot;App Service Plan&quot; allows you to change what region your application is hosted in and the pricing tier for your website. You can change this if you want, but you can also change this later. For now, we will skip that. Finally, leave the checkbox &quot;Pin to Startboard&quot; checked and click &quot;Create&quot; (3) at the bottom of the blade to begin creating your new Azure Web App.</p>
+
+<p><img src="images/new-web-app.png?raw=true" alt="New Web App">
+</p>
+
+<p>You will be taken back to the portal home page and a new tile will show that the web app creation is in process. Once your website is up and running, you can navigate to your Web App management blade by clicking on the tile on the home page. Once you are on the Web App management blade, you can click on the link to go to your website or you can just navigate to the name of your website. For example <a href="http://ChooseToCodeTutorial.azurewebsites.net">http://ChooseToCodeTutorial.azurewebsites.net</a>.</p>
+
+<p>Since you haven't created any content yet, you should see a page that shows your web app was successfully created.</p>
+
+<p><img src="images/web-app-success.png?raw=true" alt="Web App Success">
+</p>
+
+<p>There are a number of tools you can use to start publishing content to your new web application, but we are going to use a modern tool that includes version control as well.</p>
+
+<h3 id="Publish_your_first_web_page">Publish your first web page</h3>
+
+<p>Now that you have a web app created for your content, we need to set you up with a way to publish your code. To do this, we are going to take advantage of a version control system built into Azure called &quot;git&quot;.</p>
+
+<p>It is important to keep track of the changes that you are making as you work on your projects. Version Control Systems keep track of those changes and allow you to experiment with your code without losing track of past work. You can always &quot;undo&quot; your work if you need to. This course won't cover version control, but we will use it in order to move your code into your Azure Web App.</p>
+
+<p>Let's go back to the Azure Portal and take a look at the Web App blade for your website. Remember you can get to the management blade by clicking on the tile on the Portal home page. Additionally, you can also click on &quot;Browse All&quot; in the left navigation bar.</p>
+
+<p><img src="images/browse-all.png?raw=true" alt="Browse All">
+   </p>
+
+<p>From here, you can scroll down to Web Apps and then select your website in the blade that comes up.</p>
+
+<p>Once you have the Web App management blade up, scroll down to &quot;Deployment&quot;. Click the &quot;Set up continuous deployment&quot; to begin setting up your source control.</p>
+
+<p><img src="images/set-up-deployment.png?raw=true" alt="Set Up Deployment">
+</p>
+
+<p>In the blade that comes up for &quot;Continuous Deployment&quot;, select &quot;Choose Source&quot; (1) and then &quot;Local Git Repository&quot; (2).</p>
+
+<p><img src="images/continuous-deploy.png?raw=true" alt="Continuous Deploy">
+</p>
+
+<p>When the &quot;Choose Source&quot; closes, you will see a new option for &quot;Setup Connection&quot; (1). Click this option to set up basic authentication for deploying your code. You will need to choose a username (2) and a password.</p>
+
+<p>NOTE: The full deployment username will be the name of your website and the username you entered joined with a &quot;\&quot;. For example: &quot;choosetocode\username&quot;.</p>
+
+<p><img src="images/set-up-authentication.png?raw=true" alt="Set Up Authentication">
+</p>
+
+<p>So now that you have Azure set up for your source code it's time get some code in there to get published.</p>
+
+<p>The next thing we need to get from the Azure portal is your &quot;git clone url&quot;. This is located on your Web App management blade. Copy this URL to your clipboard and we will use it in a minute.</p>
+
+<p><img src="images/git-clone-url.png?raw=true" alt="git clone url">
+</p>
+
+<p>Now we have everything we need to connect up to Azure.</p>
+
+<h3 id="Connecting_your_code_to_Azure">Connecting your code to Azure</h3>
+
+<p>At this point, we need to get your local code folder ready to push code to Azure. Start up a &quot;Git Shell&quot; and navigate to the folder where you have stored your code.</p>
+
+<p>If you are using a Mac, at your shell prompt you can type</p>
+
+<pre><code>cd /path/to/code/directory
+</code></pre>
+
+<p>On Windows, you can use:</p>
+
+<pre><code>cd c:/path/to/code/directory
+</code></pre>
+
+<p>Once we get to the directory where you have the basic website we have been working on, we will need to create a local git repository on your machine. We create that repository with the following command:</p>
+
+<pre><code>git init
+</code></pre>
+
+<p>This will create an invisible &quot;.git&quot; folder along side your project that will keep track of all of the changes to your code. At this point, we need to add all of the code that you have created so far to a check in list.</p>
+
+<pre><code>git add .
+</code></pre>
+
+<p>The &quot;.&quot; is a wildcard and means &quot;add all files&quot;. Next, we need to commit all of the files we just added to the check in list.</p>
+
+<pre><code>git commit -m &quot;Initial commit&quot;
+</code></pre>
+
+<p>The &quot;-m&quot; means add message and then in quotes we put the message to put on the commit as the files are checked in.</p>
+
+<p>Alright, at this point, we have a git repository in Azure (that is currently empty) and we have a git repository on our local machine. We now need to sync the changes up to azure.</p>
+
+<p>First, we need to tell our local git repository that we want to connect it to the Azure repository. To do this, we add a remote connection. Remember that &quot;git clone url&quot; we copied a few minutes ago? This is where we need to use it. Replace the https:// below with your &quot;git clone url&quot;.</p>
+
+<pre><code>git remote add azure -f https://username@website.scm.blah.blah
+</code></pre>
+
+<p>This command will add a remote repository and fetch any existing items from it to syncronize our repositories. I use the name &quot;azure&quot; to remind me that I am pushing the code to Azure. Sometimes I will have multiple remote repositories, and they each can be named something different. In the documentation, you will often see this as &quot;origin&quot;.</p>
+
+<p>Finally, lets push our code from our local machine to Azure. When we do this, Azure will automatically kick off a deploy and put our code into our website.</p>
+
+<pre><code>git push azure master
+</code></pre>
+
+<p>Now, if you navigate to your web site, instead of that blue page, you should see your web site up and running. </p>
+
+<p>Congratulations, you just set up a continuously deployed web site in the cloud using modern source control tools.</p>
+
+</div>
+</body>
+</html>

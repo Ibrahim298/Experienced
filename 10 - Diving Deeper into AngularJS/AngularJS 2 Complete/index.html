@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>My First Web Page</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" rel="text/javascript" />    
+    <link href="content/app.css" rel="stylesheet"/>
+    <script src="https://code.jquery.com/jquery-1.10.2.js" type="application/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.min.js"></script>
+    <script src="http://code.angularjs.org/1.0.3/angular-sanitize.js"></script>
+    <script src="scripts/app.js" type="application/javascript"></script> 
+    <script src="scripts/MainController.js" type="application/javascript"></script>    
+</head>
+
+<body onload="onLoad()" ng-app="angularApp">
+    <div ng-controller="MainController">
+        <header class="container-fluid">
+            <h1>Visit Anytown, USA!</h1>
+        </header> 
+    
+        <nav class="container-fluid">
+            <ul class="nav navbar-inverse navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="http://www.bing.com/search?q=amazing%20places">Amazing Places</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <div class="container-fluid">
+            <div class="row">
+        
+                <section class="col-sm-6 col-sm-push-3">
+                    
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <input ng-model="smallnumber" type="text">
+                            <p>{{ theMessage }}</p>
+                            <button ng-click="checkNumber()">Submit</button>
+                        </div>
+                        <div class="col-sm-8">
+                            <label>FirstName</label><input ng-model="User.firstName" type="text" ng-model-options="{ getterSetter: true }" /></br>
+                            <label>LastName</label><input ng-model="User.lastName" type="text" ng-model-options="{ getterSetter: true }"  /></br>
+                            <label>FullName</label><span ng-bind="User.fullName()"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <article ng-repeat="article in Articles">
+                            <h2>{{ article.Title }}</h2>
+                            <div class="col-sm-3">
+                                <img ng-src="{{ article.Image }}" />
+                            </div>
+                            <div class="col-sm-9">
+                                <div ng-bind-html="article.Body"></div>
+                            </div>
+                        </article>
+                    </div>
+                    
+                </section>
+                
+                <aside class="col-sm-3 col-sm-pull-6">
+                    <h2 class="title">Things to Do</h2> 
+                    <ul>
+                        <li><a href="http://www.bing.com/search?q=hiking">Hiking</a></li>
+                        <li><a href="http://www.bing.com/search?q=biking">Biking</a></li>
+                        <li><a href="http://www.bing.com/search?q=horseback">Horseback</a></li>
+                        <li><a href="http://www.bing.com/search?q=backpacking">Backpacking</a></li>
+                    </ul>
+                </aside>            
+                
+                <aside class="col-sm-3">
+                    <h2>How to Get Here</h2>
+                    <ol id="orderedlist">
+                        <li>By Plane</li>
+                        <li>By Train</li>
+                        <li>By Automobile</li>
+                        <li>By Boat</li>
+                    </ol>
+                </aside>
+            </div>
+        </div>
+        
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-5">
+                    <a name="contact">Contact Us</a>
+                    <p>Anytown Chamber of Commerce</p>
+                    <p>123 Main St.</p>
+                    <p>Anytown, OH 43210</p>
+                </div>
+                <div class="col-sm-1">
+                    <p id="badge"></p>
+                </div>
+            </div>
+        </div>  
+            
+        <footer class="container-fluid">
+            Copyright 2015
+            <p>{{ timestamp }}</p>    
+        </footer>
+    </div>
+</body>
+
+</html>
