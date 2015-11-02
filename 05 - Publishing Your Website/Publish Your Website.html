@@ -111,7 +111,15 @@ body{font-family:helvetica, arial, freesans, clean, sans-serif;color:#333;line-h
 <pre><code>git init
 </code></pre>
 
-<p>This will create an invisible &quot;.git&quot; folder along side your project that will keep track of all of the changes to your code. At this point, we need to add all of the code that you have created so far to a check in list.</p>
+<p>This will create an invisible &quot;.git&quot; folder along side your project that will keep track of all of the changes to your code. </p>
+
+<p>You may need to do one more bit of Git configuration if you haven't done this before. We need to give Git some basic user configuration. We'll set this up with some global settings so you only have to do this once. Run the following commands so that git knows your name and email. Be sure to change the commands to reflect the username you specified in Azure when setting up your automated deployment</p>
+
+<pre><code>git config --global user.name &quot;YourAzureWebUsername&quot;
+git config --global user.email &quot;your_email@whatever.com&quot;
+</code></pre>
+
+<p>At this point, we need to add all of the code that you have created so far to a check in list.</p>
 
 <pre><code>git add .
 </code></pre>

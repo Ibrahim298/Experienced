@@ -89,7 +89,16 @@ Once we get to the directory where you have the basic website we have been worki
 git init
 ````
 
-This will create an invisible ".git" folder along side your project that will keep track of all of the changes to your code. At this point, we need to add all of the code that you have created so far to a check in list.
+This will create an invisible ".git" folder along side your project that will keep track of all of the changes to your code. 
+
+You may need to do one more bit of Git configuration if you haven't done this before. We need to give Git some basic user configuration. We'll set this up with some global settings so you only have to do this once. Run the following commands so that git knows your name and email. Be sure to change the commands to reflect the username you specified in Azure when setting up your automated deployment
+
+````
+git config --global user.name "YourAzureWebUsername"
+git config --global user.email "your_email@whatever.com"
+````
+
+At this point, we need to add all of the code that you have created so far to a check in list.
 
 ````
 git add .
