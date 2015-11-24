@@ -104,7 +104,7 @@ First, in our **index.html** page, add a reference in the \<head> of the page.
 <head>
 	<title>My First Web Page</title>
 	<link href="app.css" rel="stylesheet"/>
-	<script src="<http://code.angularjs.org/1.0.3/angular-sanitize.js>"></script>
+	<script src="http://code.angularjs.org/1.0.3/angular-sanitize.js"></script>
 	...
 </head>
 
